@@ -6,8 +6,8 @@ import java.io.IOException;
 
 public class TeamValidationTest extends CommonUtils {
     protected static final Logger logger = LogManager.getLogger(TeamValidationTest.class);
-    @Test(description = "test validates that team has equal or less than four foreign players")
 
+    @Test(description = "test validates that team has equal or less than four foreign players")
     void testForeignPlayersCount() throws IOException {
         boolean foreignPlayerCount = dataRequest().getPlayer()
                 .stream()
