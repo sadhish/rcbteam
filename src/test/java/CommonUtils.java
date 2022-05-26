@@ -1,5 +1,7 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 import datatranserobject.RcbPojo;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,6 +17,7 @@ public abstract class CommonUtils {
         File resource = new File("F:\\RestAssured\\src\\test\\resources\\RCB.json");
         String jsonString = new String(Files.readAllBytes(resource.toPath()));
         return objectMapper.readValue(jsonString, RcbPojo.class);
+
 
     }
 
