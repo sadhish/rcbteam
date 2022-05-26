@@ -1,7 +1,7 @@
 package datatranserobject;
 import java.util.List;
 import java.util.Map;
-public class RcbPojo {
+public class Team {
     private String name;
     private String location;
     public String getName() {
